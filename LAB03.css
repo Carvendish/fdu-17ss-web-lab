@@ -122,6 +122,10 @@ section{
 em{
     color: #F5A2C1
 }
+.link{
+    font-weight: bold;
+    color: #00B0FF;
+}
 
 
 /*底部*/
