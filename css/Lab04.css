@@ -76,14 +76,14 @@ form p {
 }
 
 table {
-  border: collapse;
+  border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
   margin: 0 auto;
 }
 
 table tbody td {
-  /* border: 1pt solid #95BEF0;   */
+  /*border: 1pt solid #95BEF0;*/
   line-height: 1.5em;
   vertical-align: top;
   padding: 0.5em 0.75em;

@@ -13,7 +13,99 @@
 </header>
 <main>
    <section>
-   
+   <form method="post" action="http://www.randyconnolly.com/tests/process.php">
+       <legend>
+           photo details
+       </legend>
+       <fieldset>
+           <table>
+               <tbody>
+               <tr>
+                   <td colspan="2">
+                       <p>Title</p>
+                       <input type="text" placeholder="Give your photo a descriptive name" name="title">
+                       <p>Description</p>
+                       <textarea name="description" placeholder="Adding a rich description will help with search results" rows="3"></textarea>
+                   </td>
+               </tr>
+               <tr>
+                   <td>
+                       <p>Continent</p>
+                       <select name="continent">
+                           <option>Choose continent</option><br>
+                           <option>Asia</option><br>
+                           <option>Europe</option><br>
+                           <option>North America</option><br>
+                           <option>South America</option><br>
+                           <option>Africa</option><br>
+                           <option>Oceania</option><br>
+                           <option>Antarctica</option><br>
+                       </select>
+                       <p>Country</p>
+                       <select name="country">
+                           <option>Choose country</option><br>
+                           <option>China</option><br>
+                           <option>Russia</option><br>
+                           <option>America</option><br>
+                           <option>Italy</option><br>
+                           <option>Canada</option><br>
+                       </select>
+                       <p>City</p>
+                       <input type="text" name="city">
+                   </td>
+                   <td>
+                       <div class="box">
+                       <p>Copyright?</p>
+                       <input type="radio" name="copyright" value="All rights reserved">
+                       All rights reserved<br>
+                       <input type="radio" name="copyright" value="Creative Commons" checked="checked">
+                       Creative Commons<br>
+                       </div>
+                       <div class="box">
+                       <p>Creative Commons Types</p>
+                       <input type="checkbox" name="type" value="Attribution">
+                       Attribution<br>
+                       <input type="checkbox" name="type" value="Noncommercial">
+                       Noncommercial<br>
+                       <input type="checkbox" name="type" value="No Derivative Works">
+                       No Derivative Works<br>
+                       </div>
+                   </td>
+               </tr>
+               <tr>
+                   <td colspan="2">
+                       <div class="rectangle">
+                       I accept the software license
+                       <input type="checkbox" value="accept">
+                       </div>
+                   </td>
+               </tr>
+               <tr>
+                   <td>
+                       <p>Rate this photo:</p>
+                       <input type="number" name="rate">
+                       <p>Color collection:</p>
+                       <input type="color" name="colorCollection">
+                   </td>
+                   <td>
+                       <p>Date Taken:</p>
+                       <input type="date" placeholder="年/月/日"><br>
+                       <p>Time Taken:</p>
+                       <input type="time" placeholder="--:--">
+                   </td>
+               </tr>
+               <tr>
+                   <td colspan="2">
+                       <div class="rectangle">
+                       <input type="submit" value="提交" class="rounded">
+                       <input type="reset" value="Clear Form" class="rounded">
+                       </div>
+                   </td>
+               </tr>
+               </tbody>
+           </table>
+       </fieldset>
+   </form>
    </section>
 </main>  
 
