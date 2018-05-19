@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lab07</title>
+    <link rel="stylesheet" type="text/css" href="css/Lab07.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<!--第一个下拉框-->
+<select id="firstSelect" onchange="firstChange()">
+    <option id="selectOne" value="selectOne">
+        SELECT ONE
+    </option>
+    <option id="createTable" value="createTable">
+        CREATE TABLE
+    </option>
+    <option id="addRow" value="addRow">
+        ADD ROW
+    </option>
+    <option id="deleteRow" value="deleteRow">
+        DELETE ROW
+    </option>
+    <option id="deleteTable" value="deleteTable">
+        DELETE TABLE
+    </option>
+</select>
+<div>
+
+</div>
+<!--第二个下拉框-->
+<select id="secondSelect" onchange="secondChange()">
+    <!--选项为表名，js动态生成-->
+</select>
+<div>
+
+</div>
+<script type="text/javascript" rel="script" src="js/Lab07.js"></script>
+</body>
+</html>
