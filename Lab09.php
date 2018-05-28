@@ -37,13 +37,16 @@ include 'travel-data.inc.php';
         <div class="btn-group countryButtons" role="group" aria-label="...">
               <a role="button" class="btn btn-default" href="list.php">All</a>
            
-              <?php   
+              <?php
               /* you will need to fill this place with appropriate PHP */
               /* hint: use array and loop */
               //the next line is an example
-              //<a href="list.php?country=Canada" role="button" class="btn btn-default"> Canada</a> 
-
-
+              //<a href="list.php?country=Canada" role="button" class="btn btn-default"> Canada</a>
+              foreach ($countries as $country){
+                  echo "
+                  <a href='list.php?country=".$country."' role='button' class='btn btn-default'>".$country."</a>
+                  ";
+              }
               ?>
                      
         </div>               
@@ -71,6 +74,22 @@ include 'travel-data.inc.php';
    //              	</div>
    //              </a>
 			// </li>
+          foreach ($images as $image){
+              echo "
+              <li>
+                <a href='detail.php?id=".$image['id']."' class='img-responsive'>
+               	    <img src='images/square/".$image['path']."' alt='".$image['title']."'>
+             	    <div class='caption'>
+            		    <div class='blur'>
+                	    </div>
+             		    <div class='caption-text'>
+               			     <h1>".$image['title']."</h1>
+                	    </div>
+                    </div>
+                </a>
+			  </li>
+              ";
+          }
           ?>
 
        </ul>       
